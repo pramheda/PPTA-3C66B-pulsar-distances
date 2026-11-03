@@ -1,0 +1,31 @@
+{
+  "earth_term_frequency_nHz": 60.4,
+  "chirp_mass_Msun": 690000000.0,
+  "scope": "Central-value waveform illustration; not a likelihood or a revised limit.",
+  "pulsars": [
+    {
+      "pulsar": "J0613-0200",
+      "ra_deg": 93.433233,
+      "dec_deg": -2.013123,
+      "angle_to_3C66B_deg": 68.448,
+      "printed_distance_pc": 125.0,
+      "cited_parallax_distance_pc": 1250.0,
+      "light_travel_delay_printed_yr": 257.9,
+      "light_travel_delay_cited_yr": 2579.3,
+      "pulsar_term_frequency_printed_nHz": 53.52,
+      "pulsar_term_frequency_cited_nHz": 33.52
+    },
+    {
+      "pulsar": "J1643-1224",
+      "ra_deg": 250.909009,
+      "dec_deg": -12.416296,
+      "angle_to_3C66B_deg": 136.968,
+      "printed_distance_pc": 4763.36,
+      "cited_parallax_distance_pc": 763.36,
+      "light_travel_delay_printed_yr": 26892.4,
+      "light_travel_delay_cited_yr": 4309.7,
+      "pulsar_term_frequency_printed_nHz": 15.05,
+      "pulsar_term_frequency_cited_nHz": 28.57
+    }
+  ]
+}

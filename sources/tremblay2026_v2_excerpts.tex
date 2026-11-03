@@ -1,0 +1,153 @@
+% Verbatim excerpts from main_final.tex in the arXiv:2508.20007v2 source archive
+% (https://arxiv.org/src/2508.20007v2, CC BY 4.0). Full-file SHA-256:
+% 3564d5b3cbc984520fce5f0527123e276c6698db6d69579b2bed21511f0ec63c
+% Each block is headed by its 1-based line range in that file.
+
+%% lines 104-114
+\begin{abstract}
+ 
+A subparsec supermassive black hole binary (SMBHB) at the center of the galaxy 3C~66B is a promising candidate for continuous gravitational-wave searches with pulsar timing arrays (PTAs). 
+In this work, we search for such a signal in the third data release of the Parkes Pulsar Timing Array. 
+Matching our priors to estimates of binary parameters from electromagnetic observations, we find a log Bayes factor $\ln \mathcal{B}= - 0.0027(7)$, highlighting that the source can be neither confirmed nor ruled out. 
+We place upper limits at $95\%$ credibility on the chirp mass $\mathcal{M} < 6.90 \times 10^{8}\ M_{\odot}$, and on the characteristic strain amplitude  $\textrm{log}_{10}(h_0)< -14.44$. 
+This partially rules out the parameter space suggested by electromagnetic (EM) observations of 3C~66B. 
+We also independently reproduce the calculation of the chirp mass with the 3 mm flux monitor data from the unresolved core of 3C~66B.
+Based on this, we outline a new methodology for constructing a joint likelihood of EM and gravitational-wave data from SMBHBs.
+Finally, we suggest that targeted searches may allow firmly established SMBHB candidates to be treated as standard sirens, for complementary constraints on the Universe expansion rate. 
+\end{abstract}
+
+%% lines 146-150
+
+One of the most promising sources of CGWs is the SMBHB candidate in the center of galaxy 3C~66B. 
+By using long baseline interferometry, \citet{SudouIguchi2003} found evidence for elliptical binary orbital motion in this radio galaxy's core and inferred a GW frequency of $f_{\textrm{GW}} = 60.4 \pm 1.73$ nHz. 
+Further observations by \citet{IguchiOkuda2010} found that the binary has a chirp mass $\mathcal{M}=7.9^{+3.8}_{-4.5} \times 10^{8}\ M_{\odot}$, primarily through measuring the orbital radius of the electromagnetic (EM)-emitting black hole and the semi-major axis of an SMBHB.
+Galaxy 3C~66B is located at a redshift $z = 0.02126$ \citep{vandenBoschGebhardt2015}, which corresponds to a luminosity distance $D_{\text{L}} = 94.17^{+0.20}_{-0.20}$~Mpc~\citep{PlanckCollaborationAghanim2020}. 
+
+%% lines 166-178
+
+\begin{tabular}{lll}
+\hline
+ & Value & \parbox[t]{0.32\linewidth}{Reference} \\ \hline \hline
+ %& Value & Reference \\ \hline \hline
+$\mathcal{M}$ ($M_{\odot}$) & $7.9^{+3.8}_{-4.5} \times 10^{8}$ & \citet{IguchiOkuda2010} \\
+$f_{\textrm{GW}}$ (nHz) & $60.4 \pm 1.73$ & \citet{SudouIguchi2003} \\
+$D_\text{L}$ (Mpc) & $94.17 \pm 0.20$ & \citet{vandenBoschGebhardt2015} \\
+\shortstack[l]{R.A. (HH:MM:\\SS.SSS)} & 02:23:11.4110 & \citet{HuntJohnson2021} \\
+\shortstack[l]{Decl. (DD:MM:\\SS.SSS)} & +42:59:31.385 & \citet{HuntJohnson2021} \\
+$h_0$ & $7.3^{+6.8}_{-5.8} \times 10^{-15}$ & \citet{IguchiOkuda2010} \\
+\hline
+\end{tabular}
+
+%% lines 353-356
+Similarly, we fix the luminosity distance based on the redshift of 3C~66B, assuming the $\Lambda$CDM cosmological model based on~\citet{PlanckCollaborationAghanim2020}.
+We use an exponential-Normal prior for $\log_{10} f_\text{GW}$, with mean and variance from Table~\ref{tab:3c66b}. 
+We perform this calculation with only the Earth term of the CGW.
+Finding $\ln \mathcal{B} = - 0.0027(7)$, we claim no evidence for an SMBHB at 3C~66B; nevertheless, we cannot rule out the EM model. 
+
+%% lines 370-380
+
+The results are shown in Figure \ref{fig:MassPosteriors}. 
+When only the Earth term is modeled in our analysis, we find an upper limit of $\mathcal{M} < 8.25 \times 10^{8}~M_\odot$ at 95\% credibility. 
+When including the pulsar term, we find a more constraining limit, $\mathcal{M} < 6.90 \times 10^{8}~M_\odot$. 
+For comparison, we show the value from the EM model from~\citet{IguchiOkuda2010}, $(7.9^{+3.8}_{-4.5})\times10^{8}$ $M_{\odot}$. 
+Our limits are not below the prediction of the EM model. 
+Therefore, we cannot rule it out.
+However, the tightest upper limit calculated rules out 58\% of the uncertainty region of the EM-model. 
+For consistency with~\cite{ng12_allsky_cw} and \cite{ng15_cw_targeted}, we also obtain a posterior by reweighting our posteriors to a uniform prior in linear space $\pi(\mathcal{M})=\mathcal{U}(10^{7.5},10^{9.5})~[M_\odot]$. 
+While not matching astrophysical expectations for the SMBHB mass function, this presents the most conservative limits. 
+With this prior, we report an upper limit at $95\%$ credibility to be $\mathcal{M} < 11.06 \times 10^{8} ~M_\odot$ for the Earth term and $\mathcal{M} < 10.63\ \times 10^{8} ~M_\odot$ when the pulsar term is included. 
+
+%% lines 412-414
+With only the Earth term, we find an upper limit at 95\% credibility to be $\log_{10} h_0 < -14.12$. 
+When including the pulsar term, we find a more constraining limit, $\log_{10} h_0 < -14.44$. 
+Using the more conservative prior, $\pi(h_0)=\mathcal{U}(10^{-17.0},10^{-12.5})$, we find an upper limit for the Earth term of $\log_{10} h_0 < -13.86$ and an upper limit of $\log_{10} h_0 < -14.20$ when including the pulsar term. As in Section~\ref{sec:results:mc}, the range of $h_0$ of the EM model from~\citet{IguchiOkuda2010} is partially ruled out in all cases.
+
+%% lines 476-488
+\subsection{\label{sec:results:frequentist} Frequentist Search}
+
+To confirm the nondetection of a CGW, we perform a frequentist targeted search based on the $\mathcal{F}$ statistic~\citep{EllisSiemens2012}, a frequentist measure of evidence for a CGW in our data. 
+In particular, we chose to calculate the $\mathcal{F}_\text{e}$ statistic, which is based on only modeling the Earth term of the CGW signal. 
+This statistic is a function of CGW frequency and sky position, which we set to the 3C~66B EM model values.
+We find a value of $\mathcal{F}_\text{e}=4.90$, corresponding to the false alarm probability $\text{FAP}=0.50$. 
+\citet{EllisSiemens2012} suggest a threshold for FAP to be $10^{-4}$ to claim a detection.
+The trials factor for our search is one.
+The background distribution of the $\mathcal{F}_\text{e}$ statistic is the chi-squared distribution with four degrees of freedom and is displayed in Figure \ref{fig:FeStat_fulltarget} along with the value of the $2\mathcal{F}_\text{e}$ statistic. 
+Based on this null distribution, we find a $p\text{-value} = 0.04$ which corresponds to about $2.1 \sigma$.
+Thus, the $\mathcal{F}_\text{e}$ statistic value we find is consistent with noise. 
+
+ \begin{figure}[h]
+
+%% lines 557-570
+\section{\label{sec:conclusion} Conclusion}
+
+Using PPTA DR3, we conduct a targeted multimessenger search for an SMBHB at the center of 3C~66B. 
+We search for a CGW signal by performing model selection, where we compare a model with a CGW signal to the null hypothesis. 
+With priors carefully matched to the EM model, we find a log Bayes factor of $\ln \mathcal{B} = -0.0027(7)$. 
+This suggests we can neither confirm nor rule out the EM model. 
+We also find a frequentist statistic, $\mathcal{F}_e = 5.04$, with an associated $\text{FAP}=0.50$, which confirms nondetection of the signal. 
+Based on the background estimation, we find that the value of $\mathcal{F}_e = 5.04$ corresponds to $p=0.04$, about $2.1\sigma$. 
+
+Following nondetection, we place upper limits on the mass as $\mathcal{M} < 6.90 \times 10^8~M_{\odot}$  and strain amplitude $\log_{10}(h_0) < -14.44$, at 95\% credibility. 
+
+For both the mass and the strain, we rule out over 50\% of the parameter space of the EM model. 
+Using conservative priors, we still rule out a portion of the EM model, finding a $95\%$ upper limit on the chirp mass of $\mathcal{M} < 9.55 \times 10^8~M_{\odot}$ and for the strain amplitude we find a value of $h_0 < -14.20 $. 
+Finally, we demonstrate a new methodology for a joint-likelihood approach for the analysis of 3C~66B as well as a proof of principle, showing that it may be possible to use firmly established SMBHB candidates in targeted searches with PTAs as standard sirens, complementary to high-precision cosmology.
+
+%% lines 706-762
+\section{\label{sec:appendix:pdist}Pulsar Distances}
+
+Pulsar distances are required in the calculation of the expected signal when modeling the pulsar term of the CGW signal. 
+Pulsar distances are measured using very long baseline interferometry (VLBI) astrometry, optical astrometry, timing, and the \citet{Shklovskii1970} effect. 
+A list of the priors used for each pulsar, as well as the technique used to find this distance, are listed in Table~\ref{tab:pulsar_distances}. 
+We impose a Gaussian prior on pulsar distance in accordance with the estimates found in the literature. 
+When no such estimates are available for a given pulsar, we impose a sufficiently conservative prior $\mathcal{N}(1000,200)~\text{[pc]}$. 
+Distance estimates based on pulsar dispersion measures are not used due to the large uncertainties in the electron density model~\citep{YaoManchester2017}. 
+
+\begin{table*}[]
+%\scriptsize
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Table Describing the Pulsar Distances, the Methods Used to Obtain Them, and the Source from Which They Were Obtained.}
+\begin{tabular}{cccc}
+\hline
+PSR & Distance [pc]                     & Measurement             & Reference \\ \hline
+ & (pc)                     &              & \\ \hline \hline
+J0030+0451  & $329^{+6}_{-5}$               & VLBI astrometry                   & \citet{DingDeller2023}       \\
+J0125-2327  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J0437-4715  & $156.96\pm0.11$               & Shklovskii effect                 & \citet{Shklovskii1970, ReardonBailes2024}       \\
+J0613-0200  & $125\pm54.69$                 & Timing                            & \citet{VerbiestBailes2009}       \\
+J0614-3329  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J0711-6830  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J0900-3144  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1017-7156  & $256.41\pm78.90$              & Timing                            & \citet{NgBailes2014}       \\
+J1022+1001  & $720.98^{+21.31}_{-14.55}$    & VLBI astrometry                   & \citet{DellerGoss2019}       \\
+J1024-0719  & $1072^{+67}_{-49}$            & Optical astrometry                & \citet{MoranMingarelli2023}       \\
+J1045-4509  & $303.03\pm 174.47$            & Timing                            & \citet{VerbiestBailes2009}       \\
+J1125-6014  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1446-4701  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1545-4550  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1600-3053  & $5000 \pm 3750$               & Timing                            & \citet{VerbiestBailes2009}       \\
+J1603-7202  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1643-1224  & $4763.36^{+99.06}_{-104.89}$  & VLBI astrometry                   & \citet{DingDeller2023}       \\
+J1713+0747  & $1052.63^{+66.48}_{-55.40}$   & VLBI astrometry                   & \citet{ChatterjeeBrisken2009}       \\
+J1730-2304  & $510^{+30}_{-30}$             & VLBI astrometry                   & \citet{DingDeller2023}       \\
+J1744-1134  & $416.67 \pm 17.36$            & Timing                            & \citet{VerbiestBailes2009}       \\
+J1824-2452A & $10000 \pm 50000$             & VLBI astrometry                   & \citet{DingDeller2023}       \\
+J1832-0836  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1857+0943  & $909.09 \pm 165.29$           & VLBI astrometry                   & \citet{VerbiestBailes2009}       \\
+J1902-5105  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1909-3744  & $1265.82 \pm 32.05$           & Timing                            & \citet{VerbiestBailes2009}       \\
+J1933-6211  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}       \\
+J1939+2134  & $2604.17^{+325.52}_{-311.96}$ & VLBI astrometry                   & \citet{DingDeller2023}       \\
+J2124-3358  & $322.58 \pm 57.23$            & Timing                            & \citet{VerbiestBailes2009}       \\
+J2129-5721  & $2358.49 \pm 489.50$          & Optical astrometry           & \citet{JenningsKaplan2018}       \\
+J2145-0750  & $623.83^{+24.51}_{-3.50}$     & VLBI astrometry                   & \citet{DellerGoss2019}       \\
+J2241-5236  & $1000 \pm 200$                 & ...                                 & \citet{EllisVanHaasteren2017}   \\ \hline   
+\end{tabular}
+\vspace{2mm}
+\begin{minipage}{\textwidth}
+\centering
+\footnotesize
+Note. If no distance was available, the method is listed as ``...".
+\end{minipage}
+\label{tab:pulsar_distances}

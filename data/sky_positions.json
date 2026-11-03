@@ -1,0 +1,30 @@
+{
+  "description": "Sky positions used only for the pulsar-term frequency illustration. Arcsecond precision is far more than the illustration needs.",
+  "source_3C66B": {
+    "ra_hms": "02:23:11.4110",
+    "dec_dms": "+42:59:31.385",
+    "frame": "ICRS / J2000",
+    "location": "Cardinal Tremblay et al. (2026), Table 1 (excerpt lines 166-178), citing Hunt & Johnson (2021)",
+    "gw_frequency_nHz": 60.4,
+    "chirp_mass_limit_Msun": 6.90e8,
+    "chirp_mass_location": "Abstract and Section 4.2: 95% upper limit with the pulsar term (excerpt lines 104-114, 370-380)"
+  },
+  "pulsars": [
+    {
+      "pulsar": "J0613-0200",
+      "ELONG_deg": 93.7990080578252241119696642,
+      "ELAT_deg": -25.4071385368251683716661615,
+      "source": "PPTA DR3 timing model analysis_codes/data/all/J0613-0200.par",
+      "url": "https://github.com/danielreardon/PPTA-DR3/blob/fdbe6eb1c86d4c6cf2f1f518711e44ad1a9fd3fa/analysis_codes/data/all/J0613-0200.par",
+      "git_blob_sha1": "ff39da687f173523417d9bd686d9767d84d8f248"
+    },
+    {
+      "pulsar": "J1643-1224",
+      "ELONG_deg": 251.0872213895100722585995712,
+      "ELAT_deg": 9.7783327696927808889149070,
+      "source": "PPTA DR3 timing model analysis_codes/data/all/J1643-1224.par",
+      "url": "https://github.com/danielreardon/PPTA-DR3/blob/fdbe6eb1c86d4c6cf2f1f518711e44ad1a9fd3fa/analysis_codes/data/all/J1643-1224.par",
+      "git_blob_sha1": "d9052b76d28c560aae715b73a2ed5dda14adb04c"
+    }
+  ]
+}

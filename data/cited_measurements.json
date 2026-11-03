@@ -1,0 +1,39 @@
+{
+  "description": "Parallaxes in the sources that Cardinal Tremblay et al. (2026) cite for three Table 2 distances. Values are transcribed from the cited tables; locations are given so each can be checked.",
+  "rows": [
+    {
+      "pulsar": "J1643-1224",
+      "paper_table2": {"distance_pc": 4763.36, "plus_pc": 99.06, "minus_pc": 104.89, "method": "VLBI astrometry", "citation": "Ding et al. (2023)"},
+      "cited_source": {
+        "reference": "H. Ding, A. T. Deller, B. W. Stappers et al., MNRAS 519, 4982 (2023), arXiv:2212.06351",
+        "url": "https://doi.org/10.1093/mnras/stac3725",
+        "location": "Table 5 (final astrometric models), row J1643-1224, parallax column",
+        "object": "J1643-1224",
+        "parallax_mas": 1.31, "plus_mas": 0.17, "minus_mas": 0.18
+      }
+    },
+    {
+      "pulsar": "J0613-0200",
+      "paper_table2": {"distance_pc": 125.0, "plus_pc": 54.69, "minus_pc": 54.69, "method": "Timing", "citation": "Verbiest et al. (2009)"},
+      "cited_source": {
+        "reference": "J. P. W. Verbiest, M. Bailes, W. A. Coles et al., MNRAS 400, 951 (2009), arXiv:0908.0244",
+        "url": "https://doi.org/10.1111/j.1365-2966.2009.15508.x",
+        "location": "Table 5, column J0613-0200, row 'Annual parallax, pi (mas)': printed 0.8(7). The Table 3 caption (which Table 5 refers to) states that numbers in brackets give twice the formal standard deviation.",
+        "object": "J0613-0200",
+        "parallax_mas": 0.8, "plus_mas": 0.35, "minus_mas": 0.35
+      }
+    },
+    {
+      "pulsar": "J2129-5721",
+      "paper_table2": {"distance_pc": 2358.49, "plus_pc": 489.50, "minus_pc": 489.50, "method": "Optical astrometry", "citation": "Jennings et al. (2018)"},
+      "cited_source": {
+        "reference": "R. J. Jennings, D. L. Kaplan, S. Chatterjee, J. M. Cordes, A. T. Deller, ApJ 864, 26 (2018), arXiv:1806.06076",
+        "url": "https://doi.org/10.3847/1538-4357/aad084",
+        "location": "Table 2, row J2129-0429, Gaia DR2 parallax column: 0.424(88). The paper has no entry for J2129-5721.",
+        "object": "J2129-0429",
+        "parallax_mas": 0.424, "plus_mas": 0.088, "minus_mas": 0.088
+      },
+      "note": "Verbiest et al. (2009) Table 5 lists a timing parallax for J2129-5721 itself, printed 1.9(17) mas (twice-formal brackets: 1.9 +/- 0.85 mas). That weak measurement is noted for context only; this repository does not propose a replacement distance."
+    }
+  ]
+}

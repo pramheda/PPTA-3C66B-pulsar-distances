@@ -1,0 +1,104 @@
+{
+  "source": "tremblay2026_v2_excerpts.tex",
+  "table2_rows_parsed": 31,
+  "distances": [
+    {
+      "pulsar": "J1643-1224",
+      "table2_line": 740,
+      "printed_distance_pc": 4763.36,
+      "printed_errors_pc": [
+        99.06,
+        104.89
+      ],
+      "cited_object": "J1643-1224",
+      "cited_parallax_mas": [
+        1.31,
+        0.17,
+        0.18
+      ],
+      "cited_location": "Table 5 (final astrometric models), row J1643-1224, parallax column",
+      "distance_from_cited_parallax_pc": 763.36,
+      "errors_from_cited_parallax_pc": [
+        104.89,
+        99.06
+      ],
+      "printed_over_implied": 6.240002,
+      "same_object": true
+    },
+    {
+      "pulsar": "J0613-0200",
+      "table2_line": 727,
+      "printed_distance_pc": 125.0,
+      "printed_errors_pc": [
+        54.69,
+        54.69
+      ],
+      "cited_object": "J0613-0200",
+      "cited_parallax_mas": [
+        0.8,
+        0.35,
+        0.35
+      ],
+      "cited_location": "Table 5, column J0613-0200, row 'Annual parallax, pi (mas)': printed 0.8(7). The Table 3 caption (which Table 5 refers to) states that numbers in brackets give twice the formal standard deviation.",
+      "distance_from_cited_parallax_pc": 1250.0,
+      "errors_from_cited_parallax_pc": [
+        546.87,
+        546.87
+      ],
+      "printed_over_implied": 0.1,
+      "same_object": true
+    },
+    {
+      "pulsar": "J2129-5721",
+      "table2_line": 752,
+      "printed_distance_pc": 2358.49,
+      "printed_errors_pc": [
+        489.5,
+        489.5
+      ],
+      "cited_object": "J2129-0429",
+      "cited_parallax_mas": [
+        0.424,
+        0.088,
+        0.088
+      ],
+      "cited_location": "Table 2, row J2129-0429, Gaia DR2 parallax column: 0.424(88). The paper has no entry for J2129-5721.",
+      "distance_from_cited_parallax_pc": 2358.49,
+      "errors_from_cited_parallax_pc": [
+        489.5,
+        489.5
+      ],
+      "printed_over_implied": 1.0,
+      "same_object": false
+    }
+  ],
+  "frequentist_search": {
+    "section_4_5": {
+      "line": 481,
+      "F_e": 4.9,
+      "printed_FAP": 0.5,
+      "printed_p_value": 0.04,
+      "FAP_from_stated_convention": 0.04393
+    },
+    "conclusion": {
+      "line": 563,
+      "F_e": 5.04,
+      "printed_FAP": 0.5,
+      "FAP_from_stated_convention": 0.0391
+    },
+    "detection_threshold_FAP": 0.0001,
+    "nondetection_unchanged": true
+  },
+  "conservative_chirp_mass_limit": {
+    "description": "95% chirp-mass limit with the pulsar term under the conservative uniform-in-mass prior",
+    "results_section_4_2": {
+      "line": 380,
+      "value_1e8_Msun": 10.63
+    },
+    "conclusion": {
+      "line": 569,
+      "value_1e8_Msun": 9.55
+    },
+    "consistent": false
+  }
+}
